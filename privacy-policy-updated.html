@@ -1,112 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QATestMate Privacy Policy</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
-        }
-        .container {
-            background-color: #fff;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        h1 {
-            text-align: center;
-            color: #2c3e50;
-        }
-        h2 {
-            color: #34495e;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 5px;
-            margin-top: 30px;
-        }
-        .last-updated {
-            text-align: center;
-            color: #7f8c8d;
-            font-style: italic;
-            margin-bottom: 30px;
-        }
-        ul {
-            margin-top: 0;
-        }
-        p {
-            margin-bottom: 15px;
-        }
-        .footer {
-            margin-top: 40px;
-            text-align: center;
-            font-size: 0.9em;
-            color: #7f8c8d;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - QATestMate</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --border: #e2e8f0;
+      --text: #1e293b;
+      --muted: #64748b;
+      --accent: #2563eb;
+      --success: #059669;
+      --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: var(--font);
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    }
+    header {
+      margin-bottom: 30px;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 20px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--text);
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
+    }
+    .last-updated {
+      font-size: 14px;
+      color: var(--muted);
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text);
+      margin-top: 30px;
+      margin-bottom: 12px;
+      border-left: 4px solid var(--accent);
+      padding-left: 10px;
+    }
+    p {
+      margin-bottom: 16px;
+      color: #334155;
+    }
+    ul {
+      margin-bottom: 20px;
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+      color: #334155;
+    }
+    .badge {
+      display: inline-block;
+      background: #eff6ff;
+      color: var(--accent);
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-right: 4px;
+      border: 1px solid #bfdbfe;
+    }
+    .highlight-box {
+      background-color: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+    .highlight-box h3 {
+      color: var(--success);
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .highlight-box p {
+      margin-bottom: 0;
+      color: #166534;
+    }
+    footer {
+      margin-top: 40px;
+      border-top: 1px solid var(--border);
+      padding-top: 20px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>QATestMate Privacy Policy</h1>
-        <p class="last-updated">Last Updated: June 29, 2026</p>
 
-        <h2>Overview</h2>
-        <p>QATestMate is a Chrome extension designed to help Quality Assurance (QA) engineers record software testing activities and generate test evidence reports. The extension only records interactions after the user explicitly starts a recording session. It never records activity automatically.</p>
+<div class="container">
+  <header>
+    <h1>Privacy Policy</h1>
+    <div class="last-updated">Last Updated: June 29, 2026</div>
+  </header>
 
-        <h2>Information Collected</h2>
-        <p>While a recording session is active, QATestMate may temporarily collect the following:</p>
-        <ul>
-            <li>Mouse clicks, text entered into input fields, dropdown selections, and checkbox/radio button selections.</li>
-            <li>Navigation events, element labels, and XPath/CSS selectors of interacted elements.</li>
-            <li>Page titles, Page URLs, and timestamps of each recorded action.</li>
-            <li>Screenshots of the visible browser tab after each recorded step.</li>
-        </ul>
+  <p>This Privacy Policy describes how <strong>QATestMate – Test Evidence Recorder</strong> ("we", "our", or "the extension") handles information. We are committed to maintaining the highest standards of user privacy and strictly adhere to the <strong>Principle of Least Privilege</strong>.</p>
 
-        <h2>Sensitive Information</h2>
-        <ul>
-            <li>Password fields are automatically detected and their values are never stored.</li>
-            <li>Password values are masked before recording.</li>
-            <li>The extension is not designed to collect payment information or authentication tokens.</li>
-        </ul>
+  <div class="highlight-box">
+    <h3>🔒 Purely Local Data Processing</h3>
+    <p>QATestMate operates entirely inside your web browser. <strong>We do not collect, store, transmit, or sell your personal data, browsing history, or recording evidence to any external server.</strong> Everything stays on your machine.</p>
+  </div>
 
-        <h2>How Information Is Used</h2>
-        <p>The recorded information is used solely to create software test documentation, generate HTML reports, generate CSV/JSON exports, and create ZIP packages containing reports and screenshots. No recorded information is used for advertising, analytics, profiling, marketing, or personalization.</p>
+  <h2>1. What Data the Extension Processes</h2>
+  <p>In order to record test steps and generate HTML or ZIP reports, the extension processes the following information locally:</p>
+  <ul>
+    <li><strong>User Actions:</strong> Clicks, text inputs, form selections, and URL navigation changes within the active tab you choose to record.</li>
+    <li><strong>Screenshots:</strong> Visual captures of the viewport of the active tab being recorded to provide step evidence.</li>
+    <li><strong>Input Masking:</strong> For your security, any values typed into <code>password</code> type input fields are automatically masked locally as <code>••••••••</code> and are never captured or saved in plain text.</li>
+  </ul>
 
-        <h2>Chrome Web Store Limited Use Disclosure</h2>
-        <p>QATestMate strictly adheres to the Chrome Web Store Developer Program Policies. We certify that:</p>
-        <ul>
-            <li>We do not sell or transfer user data to third parties, outside of the approved use cases.</li>
-            <li>We do not use or transfer user data for purposes that are unrelated to the item's single purpose of generating QA test documentation.</li>
-            <li>We do not use or transfer user data to determine creditworthiness or for lending purposes.</li>
-        </ul>
+  <h2>2. Permission Justifications</h2>
+  <p>To perform its functions, QATestMate requests the following permissions, each strictly limited to its technical requirement:</p>
+  <ul>
+    <li><span class="badge">activeTab</span> Used to capture screenshots and track interactions only on the tab where you explicitly start the recording.</li>
+    <li><span class="badge">scripting</span> Used to inject the event listener script (<code>tracker.js</code>) into the current tab upon clicking "Start Recording".</li>
+    <li><span class="badge">storage</span> Used to save recorded step details (descriptions, CSS paths, XPaths) in the browser's temporary session storage.</li>
+    <li><span class="badge">downloads</span> Used to save HTML reports or ZIP archives directly to your system's Downloads folder when you click the "Export" buttons.</li>
+    <li><span class="badge">alarms</span> Used to keep the background service worker alive while a test recording session is in progress.</li>
+  </ul>
 
-        <h2>Data Storage and Transmission</h2>
-        <p>All recorded information is processed and stored locally within the user's browser during the active recording session. Temporary recording data is stored only until the user exports or clears the session. Exported reports are saved directly to the user's computer using the Chrome Downloads API. QATestMate does not upload, transmit, synchronize, or back up any recorded information to external servers. There is no cloud storage, no remote APIs, and no third-party tracking.</p>
+  <h2>3. Optional AI Integration & Third-Party Transfers</h2>
+  <p>If you choose to use the <strong>"Draft Test Case with AI"</strong> feature:</p>
+  <ul>
+    <li>Only the text-based description of your recorded steps and the test case name are sent to the Google Gemini API (via Google's Generative Language endpoint).</li>
+    <li><strong>No screenshots, personal identification data, or browsing credentials are ever sent to the API.</strong></li>
+    <li>You may use the built-in key or configure your own Google AI Studio API key. The data transmitted is subject to Google's standard developer API terms.</li>
+  </ul>
 
-        <h2>User Control</h2>
-        <p>Users have complete control over recordings. You may start recording manually, stop at any time, delete individual steps, clear an entire session, and export reports only when you choose.</p>
+  <h2>4. Data Retention and Deletion</h2>
+  <p>All recorded steps and screenshots are stored locally in your browser's IndexedDB and session storage. This data is deleted immediately when:</p>
+  <ul>
+    <li>You click the "Clear all" button in the extension popup.</li>
+    <li>You uninstall the extension from Google Chrome.</li>
+  </ul>
 
-        <h2>Chrome Permissions</h2>
-        <p>QATestMate requests only the permissions required to provide its core functionality. Permissions are used exclusively for recording user interactions, capturing screenshots of the active tab, generating downloadable reports, and temporarily storing recording data to prevent data loss.</p>
+  <h2>5. Contact & Support</h2>
+  <p>If you have any questions or feedback regarding this Privacy Policy, please contact the developer via the official extension page on the Chrome Web Store.</p>
 
-        <h2>Children's Privacy</h2>
-        <p>QATestMate is intended for software testing professionals and is not directed toward children under 13 years of age.</p>
+  <footer>
+    &copy; 2026 QATestMate. All rights reserved.
+  </footer>
+</div>
 
-        <h2>Changes to This Policy</h2>
-        <p>This Privacy Policy may be updated periodically. Any changes will be reflected by updating the "Last Updated" date on this page.</p>
-
-        <h2>Contact</h2>
-        <p>Sudheer Kumar Aerva<br>
-        Email: <a href="mailto:sonuandsanju@gmail.com">sonuandsanju@gmail.com</a></p>
-
-        <div class="footer">
-            <p>&copy; 2026 QATestMate. All rights reserved.</p>
-        </div>
-    </div>
 </body>
 </html>
